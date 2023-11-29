@@ -1,0 +1,68 @@
+<?php
+include("template/header.php");
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/producto.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<title>Apronax Liquid Naproxeno | Medicine Store</title>
+
+</head>
+<body>
+		<main>
+			<div class="img">
+			<img src="img/3.jpg" witdh="250px" height="250px">
+			</div>
+		<div class="producto">
+			<h1>Apronax Liquid Naproxeno 275 mg Bayer Caja x 8 Cápsulas</h1><br>
+			<div class="presentacion">
+			<h3>Descripcion</h3><br>
+		    </div>
+			<div class="texto">
+				<p>Es un producto farmacéutico fabricado por la empresa Bayer.<br> Se presenta en forma de cápsulas y cada cápsula contiene 275 miligramos<br> de naproxeno, que es un medicamento no esteroideo<br> antiinflamatorio (AINE). El naproxeno se utiliza principalmente para aliviar el dolor<br> y reducir la inflamación en diversas condiciones médicas.</p>
+			</div>
+				<div class="conteiner">
+					<div class="contador">
+					<input type="number" name="" id="" placeholder="Seleccione la cantidad" value="1" min="1" max="15" class="input-c">
+			
+				</div>
+				</div>
+
+				<button class="add" onclick="aviso()">
+					<i class='bx bx-plus'></i>Añadir al carrito 
+				</button>
+				
+				<button class="comprar" onclick="avisoCompra()">
+					Comprar
+				</button>
+		</div><br>
+			</main>
+			<h2>Otros Productos</h2>
+		<section class="tabla">
+
+	        <table id="imgs">
+	            <td><a href="producto1.php"><img id="img" src="img/2.jpg"></a></td>
+	                <td><a href="producto2.php"><img id="img" src="img/3.jpg"></td></a>
+	                <td><a href="producto4.php"><img id="img" src="img/4.jpg"></td></a>
+	                <td><a href="500.php"><img id="img" src="img/5.jpg"></td></a>
+	                <td><a href="404.php"><img id="img" src="img/6.jpg"></td></a>
+	        </table>
+    	</section>    	
+				<script>
+				function aviso() {
+					alert("Agregado al carrito correctamente");
+				}
+				function avisoCompra() {
+					alert("Compra exitosa");
+				}
+				</script>
+				
+		
+    </body>
+    </html>
+<?php
+include("template/footer.php");
+?>
